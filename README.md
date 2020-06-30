@@ -1,4 +1,4 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+cd[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
 # Travel Tracker
 
@@ -10,20 +10,20 @@ A user can add, update, and delete any trips, and has access to all trip informa
 Will be posted once deployed.
 
 ## Link to back end repo
-[Back End Repository] (https://github.com/A-Norwood/Travel-Tracker-server)
+[Back End Repository](https://github.com/A-Norwood/Travel-Tracker-server)
 
 
 ## Wireframes
 
-[Wireframes] (https://imgur.com/a/KdBZuyJ)
+[Wireframes](https://imgur.com/a/KdBZuyJ)
 
 ## User Stories
-I am a user and I want to sign up, sign in, change password, sign out.
-I am a user and I want to add a place I have traveled.
-I am a user and I want to add a date when I traveled to specific location.
-I am a user and I want to add an experience to a place I have traveled.
-I am a user and want to update already inputted information.
-I am a user and I want to delete an item from my travel list.
+1. I am a user and I want to sign up, sign in, change password, sign out.
+2. I am a user and I want to add a place I have traveled.
+3. I am a user and I want to add a date when I traveled to specific location.
+4. I am a user and I want to add an experience to a place I have traveled.
+5. I am a user and want to update already inputted information.
+6. I am a user and I want to delete an item from my travel list.
 
 ## Technoligies Used
 HTML, CSS, Handlebars, JavaScript.
