@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Travel Tracker</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,6 +12,69 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h1>Travel Tracker</h1>
+      <section>
+        <!-- sign up section -->
+        <div class="show">
+          <h4>Sign Up:</h4>
+        <form id="sign-up">
+          <input placeholder="Enter Email" name="credentials[email]" type="email" required>
+          <input placeholder="Enter Password" name="credentials[password]" type="password" required>
+          <input placeholder="Confirm Password" name="credentials[password_confirmation]" type="password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+       </div>
+      </section>
+
+      <p id="sign-up-content"></p>
+
+      <section>
+        <!-- // sign in section -->
+        <div class="show">
+        <h4>Sign In:</h4>
+        <form id="sign-in">
+          <input placeholder="Enter Email" name="credentials[email]" type="email" required>
+          <input placeholder="Password Here" name="credentials[password]" type="password" required>
+          <button type="submit">Sign In</button>
+        </form>
+      </div>
+      </section>
+
+      <p class="change-pw-message"></p>
+      <section>
+        <!-- // change password section -->
+        <div class="hidden">
+          <form id="change-pw">
+          <input placeholder="Old Password" type="password"
+          name="passwords[old]" required>
+          <input placeholder="New password" type="password"
+          name="passwords[new]" required>
+          <button type="submit">Change Password</button>
+      </form>
+    </div>
+    </section>
+
+    <section>
+      <!-- // sign out section -->
+    <div id = "sign-out-stuff" class= "hidden">
+      <form id="sign-out">
+      <button type="submit">Sign Out</button>
+      </form>
+    </div>
+    </section>
+    <p id="signout-message"></p>
+
+    <!-- create travel section -->
+    <section id= "create-travel">
+      <div class="hidden">
+          <form id="create-travel-form">
+            <h3>Create a travel:</h3>
+            <input name="travel[date]" type="text" required placeholder="Travel Date">
+            <input name="travel[location]" type="text" required placeholder="Travel Location">
+            <button type="submit">Submit Travel</button>
+          </form>
+        </div>
+    </section>
+
     </body>
 </html>

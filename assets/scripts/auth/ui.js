@@ -24,6 +24,7 @@ const signInSuccess = function (response) {
   $('#sign-out').show()
   $('#change-pw').show()
   $('#signout-message').text('Signed out successfully. Please sign in again.').hide()
+  $('#create-travel-form').show()
   store.user = response.user
 }
 
@@ -45,13 +46,13 @@ const changePwFailure = function () {
 
 const signOutSuccess = function () {
   $('#signout-message').text('Signed out successfully. Please sign in again.').show()
-  $('#new-game').addClass('hidden')
   $('#change-pw').hide()
   $('.show').show()
   $('#sign-up-content').hide()
   $('.message').hide()
   $('#sign-out').hide()
   $('.change-pw-message').hide()
+  $('#create-travel-form').hide()
   console.log(store)
 }
 
