@@ -25,6 +25,7 @@ const signInSuccess = function (response) {
   $('#change-pw').show()
   $('#signout-message').text('Signed out successfully. Please sign in again.').hide()
   $('#create-travel-form').show()
+  $('#view-travels-btn').show()
   store.user = response.user
 }
 
@@ -53,6 +54,7 @@ const signOutSuccess = function () {
   $('#sign-out').hide()
   $('.change-pw-message').hide()
   $('#create-travel-form').hide()
+  $('#view-travels-btn').hide()
   console.log(store)
 }
 

@@ -35,10 +35,18 @@ const travelIndex = () => {
   })
 }
 
+const deleteTravel = (travelId) => {
+  return $.ajax({
+    method: 'DELETE',
+    url: config.apiUrl + '/travel/' + travelId,
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    }
+  })
+}
+
 module.exports = {
   travelIndex,
-  createTravel
-  // getTravel,
-  // editTravel,
-  // deleteTravel
+  createTravel,
+  deleteTravel
 }
