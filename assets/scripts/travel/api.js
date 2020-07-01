@@ -1,26 +1,6 @@
 const config = require('./../config.js')
 const store = require('./../store.js')
 
-// const travelIndex = () => {
-//   return $.ajax({
-//     url: config.apiUrl + '/travel',
-//     method: 'GET',
-//     headers: {
-//       Authorization: 'Token token=' + store.user.token
-//     }
-//   })
-// }
-//
-// const getTravel = (id) => {
-//   return $.ajax({
-//     url: config.apiUrl + '/travel/' + id,
-//     method: 'GET',
-//     headers: {
-//       Authorization: 'Token token=' + store.user.token
-//     }
-//   })
-// }
-
 const createTravel = function (data) {
   // console.log(store.user._id)
   // console.log(store.user.token)
@@ -39,35 +19,24 @@ const createTravel = function (data) {
   })
 }
 
-//
-// const editTravel = (data, id) => {
-//   const travel = data.travel
-//   console.log(travel)
-//
-//   return $.ajax({
-//     url: config.apiUrl + '/travel/' + id,
-//     method: 'PATCH',
-//     headers: {
-//       Authorization: 'Token token=' + store.user.token
-//     },
-//     data: {
-//       travel
-//     }
-//   })
-// }
-//
-// const deleteTravel = (travelId) => {
-//   return $.ajax({
-//     url: config.apiUrl + '/travel/' + travelId,
-//     method: 'DELETE',
-//     headers: {
-//       Authorization: 'Token token=' + store.user.token
-//     }
-//   })
-// }
+const travelIndex = () => {
+  // console.log('this is owner from api ', store.user._id)
+  return $.ajax({
+    method: 'GET',
+    url: config.apiUrl + '/travel',
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    },
+    data: {
+      travel: {
+        owner: store.user._id
+      }
+    }
+  })
+}
 
 module.exports = {
-  // travelIndex,
+  travelIndex,
   createTravel
   // getTravel,
   // editTravel,
