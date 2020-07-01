@@ -10,4 +10,5 @@ $(() => {
   $('#create-travel-form').on('submit', travelEvents.onCreateTravel)
   $('#view-travels-btn').on('click', travelEvents.onTravelIndex)
   $('.content').on('click', '.delete-travel', travelEvents.onDeleteTravel)
+  $('#update-travel').on('submit', travelEvents.onUpdateTravel)
 })

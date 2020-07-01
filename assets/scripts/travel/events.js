@@ -27,8 +27,18 @@ const onDeleteTravel = function (event) {
     .catch(ui.deleteFailure)
 }
 
+const onUpdateTravel = function (event) {
+  event.preventDefault()
+  const form = event.target
+  const data = getFormFields(form)
+  api.updateTravel(data)
+    .then(ui.updateSuccess)
+    .catch(ui.updateFailure)
+}
+
 module.exports = {
   onCreateTravel,
   onTravelIndex,
-  onDeleteTravel
+  onDeleteTravel,
+  onUpdateTravel
 }

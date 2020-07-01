@@ -15,13 +15,15 @@ const createTravelFailure = function (data) {
 
 const indexSuccess = (data) => {
   const showTravelHtml = showTravel({travel: data.travel})
-  $('.content').html(showTravelHtml)
+  const showId = showTravel({travel: data.travel._id})
+  $('.content').html(showTravelHtml, showId)
   $('#view-travels-message').text('Here are your travels!')
   $('#view-travels-btn').show()
 }
 
 const deleteSuccess = (travelId) => {
   $(`[data-container-id='${travelId}']`).remove()
+  $('#delete-message').text('Travel has been deleted')
 }
 
 const deleteFailure = (error) => {
