@@ -15,10 +15,9 @@ const createTravelFailure = function (data) {
 
 const indexSuccess = (data) => {
   const showTravelHtml = showTravel({travel: data.travel})
-  const showId = showTravel({travel: data.travel._id})
-  $('.content').html(showTravelHtml, showId)
+  // const showId = showTravel({travel: data.travel._id})
+  $('.content').html(showTravelHtml)
   $('#view-travels-message').text('Here are your travels!')
-  // $('#view-travels-btn').show()
 }
 
 const deleteSuccess = (travelId) => {

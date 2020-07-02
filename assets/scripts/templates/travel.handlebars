@@ -1,16 +1,16 @@
 
 {{#each travel as |travel|}}
   {{log travel}}
-  <div data-id="{{travel._id}}">
-    <span>ID:</span>{{travel._id}}
+  <!-- <div class="text-center" class="w-100 p-3" style="background-color: #eee;" data-id="{{travel._id}}">
+    <span>ID:</span>{{travel._id}} -->
   </div>
-  <div data-id="{{travel._id}}">
-    <span>Date:</span>{{travel.date}}
+  <div class="text-center" class="w-100 p-3" style="background-color: #eee;" data-id="{{travel._id}}">
+   <span>Date:</span>{{travel.date}}
   </div>
-  <div data-id="{{travel._id}}">
+  <div class="text-center" class="w-100 p-3" style="background-color: #eee;" data-id="{{travel._id}}">
     <span>Location:</span>{{limit travel.location 30}}
-    <button data-id="{{travel._id}}" class="btn btn-danger update-travel-btn">Update</button>
-    <button data-id="{{travel._id}}" class="btn btn-danger delete-travel">Delete</button>
+  <br /><button data-id="{{travel._id}}" class="btn btn-outline-info update-travel-btn">Update</button>
+  <button data-id="{{travel._id}}" class="btn btn-outline-danger delete-travel">Delete</button>
 
   </div>
 {{/each}}

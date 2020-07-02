@@ -21,7 +21,7 @@
           <input placeholder="Enter Email" name="credentials[email]" type="email" required>
           <input placeholder="Enter Password" name="credentials[password]" type="password" required>
           <input placeholder="Confirm Password" name="credentials[password_confirmation]" type="password" required>
-          <button type="submit">Sign Up</button>
+          <button class="btn btn-outline-info" type="submit">Sign Up</button>
         </form>
        </div>
       </section>
@@ -35,7 +35,7 @@
         <form id="sign-in">
           <input placeholder="Enter Email" name="credentials[email]" type="email" required>
           <input placeholder="Password Here" name="credentials[password]" type="password" required>
-          <button type="submit">Sign In</button>
+          <button class="btn btn-outline-info" type="submit">Sign In</button>
         </form>
       </div>
       </section>
@@ -49,7 +49,7 @@
           name="passwords[old]" required>
           <input placeholder="New password" type="password"
           name="passwords[new]" required>
-          <button type="submit">Change Password</button>
+          <button class="btn btn-outline-warning" type="submit">Change Password</button>
       </form>
     </div>
     </section>
@@ -57,13 +57,13 @@
     <section>
       <!-- // sign out section -->
     <div id = "sign-out-stuff" class= "hidden">
-      <form id="sign-out">
-      <button type="submit">Sign Out</button>
+      <form class="text-right fixed-top" id="sign-out">
+      <button class="btn btn-outline-danger" type="submit">Sign Out</button>
       </form>
     </div>
     </section>
     <p id="signout-message"></p>
-
+    <div class="logged-in-view">
     <!-- create travel section -->
     <section id= "create-travel">
       <div class="hidden">
@@ -71,11 +71,11 @@
             <h3>Create a travel:</h3>
             <input name="travel[date]" type="text" required placeholder="Travel Date">
             <input name="travel[location]" type="text" required placeholder="Travel Location">
-            <button type="submit">Submit Travel</button>
+            <button class="btn btn-outline-primary" type="submit">Submit Travel</button>
           </form>
           <p id="create-message"><p>
             <!-- View Travel Section -->
-          <button id="view-travels-btn">View Your Travels</button>
+          <button class="btn btn-primary btn-lg btn-block" id="view-travels-btn">View Your Travels</button>
         </div>
     </section>
   <p id="view-travels-message"></p>
@@ -87,9 +87,10 @@
     <form id="update-travel">
       <input name="travel[date]" type="text" placeholder="Updated Date">
       <input name="travel[location]" type="text" placeholder="Updated Location">
-      <button type="submit">Submit Update</button>
+      <button class="btn btn-outline-primary" type="submit">Submit Update</button>
     </form>
   </div>
   <p id="update-message"></p>
+</div>
     </body>
 </html>
