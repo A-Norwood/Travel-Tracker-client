@@ -18,7 +18,7 @@ const indexSuccess = (data) => {
   const showId = showTravel({travel: data.travel._id})
   $('.content').html(showTravelHtml, showId)
   $('#view-travels-message').text('Here are your travels!')
-  $('#view-travels-btn').show()
+  // $('#view-travels-btn').show()
 }
 
 const deleteSuccess = (travelId) => {
@@ -33,7 +33,7 @@ const deleteFailure = (error) => {
 
 const updateSuccess = (travelId) => {
   $('form').trigger('reset')
-  $('#update-message').text('Updated travel successfully. Click "View Your Travels to view updated submission"')
+  $('#update-message').text('Updated travel successfully. Click "View Your Travels" to view updated submission')
   $('#update-travel').hide()
 }
 
