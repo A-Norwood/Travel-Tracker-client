@@ -1,13 +1,16 @@
+
 {{#each travel as |travel|}}
   {{log travel}}
-  <div data-container-id="{{travel._id}}">
+  <div data-id="{{travel._id}}">
     <span>ID:</span>{{travel._id}}
   </div>
-  <div data-container-id="{{travel._id}}">
+  <div data-id="{{travel._id}}">
     <span>Date:</span>{{travel.date}}
   </div>
-  <div data-container-id="{{travel._id}}">
+  <div data-id="{{travel._id}}">
     <span>Location:</span>{{limit travel.location 30}}
+    <button data-id="{{travel._id}}" class="btn btn-danger update-travel-btn">Update</button>
     <button data-id="{{travel._id}}" class="btn btn-danger delete-travel">Delete</button>
+
   </div>
 {{/each}}

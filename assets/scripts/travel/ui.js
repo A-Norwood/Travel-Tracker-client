@@ -2,10 +2,10 @@ const store = require('./../store')
 const showTravel = require('./../templates/travel.handlebars')
 
 const createTravelSuccess = function (response) {
-  store.travel = response.travel
   // console.log('success')
   $('form').trigger('reset')
   $('#create-message').text('Travel entry submitted!')
+  store.travel = response.travel
 }
 
 const createTravelFailure = function (data) {
@@ -22,12 +22,24 @@ const indexSuccess = (data) => {
 }
 
 const deleteSuccess = (travelId) => {
-  $(`[data-container-id='${travelId}']`).remove()
+  $(`[data-id='${travelId}']`).remove()
   $('#delete-message').text('Travel has been deleted')
 }
 
 const deleteFailure = (error) => {
   console.error(error)
+  $('#delete-message').text('Travel delete action failed')
+}
+
+const updateSuccess = (travelId) => {
+  $('form').trigger('reset')
+  $('#update-message').text('Updated travel successfully. Click "View Your Travels to view updated submission"')
+  $('#update-travel').hide()
+}
+
+const updateFailure = () => {
+  $('form').trigger('reset')
+  $('#update-message').text('Updated travel failed')
 }
 
 module.exports = {
@@ -35,5 +47,7 @@ module.exports = {
   createTravelFailure,
   indexSuccess,
   deleteSuccess,
-  deleteFailure
+  deleteFailure,
+  updateSuccess,
+  updateFailure
 }

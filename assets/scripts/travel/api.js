@@ -48,7 +48,7 @@ const deleteTravel = (travelId) => {
 const updateTravel = (data) => {
   return $.ajax({
     method: 'PATCH',
-    url: config.apiUrl + '/travel/' + store.travel._id,
+    url: config.apiUrl + '/travel/' + store.travelId,
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
