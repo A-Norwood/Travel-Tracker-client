@@ -13,11 +13,12 @@
     </head>
     <body>
       <h1>Travel Tracker</h1>
+
       <section>
         <!-- sign up section -->
         <div class="show">
-          <h4>Sign Up:</h4>
-        <form id="sign-up">
+          <h4 class="d-flex justify-content-center">Sign Up:</h4>
+        <form id="sign-up" class="d-flex justify-content-center">
           <input placeholder="Enter Email" name="credentials[email]" type="email" required>
           <input placeholder="Enter Password" name="credentials[password]" type="password" required>
           <input placeholder="Confirm Password" name="credentials[password_confirmation]" type="password" required>
@@ -25,14 +26,15 @@
         </form>
        </div>
       </section>
-
+      <!-- <div class="d-flex justify-content-center"> -->
       <p id="sign-up-content"></p>
+    <!-- </div> -->
 
       <section>
         <!-- // sign in section -->
         <div class="show">
-        <h4>Sign In:</h4>
-        <form id="sign-in">
+        <h4 class="d-flex justify-content-center">Sign In:</h4>
+        <form id="sign-in" class="d-flex justify-content-center">
           <input placeholder="Enter Email" name="credentials[email]" type="email" required>
           <input placeholder="Password Here" name="credentials[password]" type="password" required>
           <button class="btn btn-outline-info" type="submit">Sign In</button>
@@ -40,11 +42,11 @@
       </div>
       </section>
 
+<!-- // change password section -->
       <p class="change-pw-message"></p>
       <section>
-        <!-- // change password section -->
         <div class="hidden">
-          <form id="change-pw">
+        <form id="change-pw">
           <input placeholder="Old Password" type="password"
           name="passwords[old]" required>
           <input placeholder="New password" type="password"
@@ -54,43 +56,46 @@
     </div>
     </section>
 
+<!-- // sign out section -->
     <section>
-      <!-- // sign out section -->
     <div id = "sign-out-stuff" class= "hidden">
       <form class="text-right fixed-top" id="sign-out">
       <button class="btn btn-outline-danger" type="submit">Sign Out</button>
       </form>
     </div>
     </section>
+    <div class="d-flex justify-content-center">
     <p id="signout-message"></p>
+  </div>
     <div class="logged-in-view">
     <!-- create travel section -->
     <section id= "create-travel">
       <div class="hidden">
-          <form id="create-travel-form">
-            <h3>Create a travel:</h3>
+          <form id="create-travel-form" class="d-flex justify-content-center">
+            <h3>Create a travel: </h3>
             <input name="travel[date]" type="text" required placeholder="Travel Date">
             <input name="travel[location]" type="text" required placeholder="Travel Location">
             <button class="btn btn-outline-primary" type="submit">Submit Travel</button>
           </form>
-          <p id="create-message"><p>
+          <p id="create-message" class="d-flex justify-content-center"><p>
             <!-- View Travel Section -->
           <button class="btn btn-primary btn-lg btn-block" id="view-travels-btn">View Your Travels</button>
         </div>
     </section>
-  <p id="view-travels-message"></p>
-  <p id="delete-message"></p>
+  <p id="view-travels-message" class="d-flex justify-content-center"></p>
+  <p id="delete-message" class="d-flex justify-content-center"></p>
   <p class="content"></p>
   <!-- Refer to handlebars for delelete section -->
   <!-- Update section -->
   <div id="update-travel-info" class="hidden">
+    <div class="d-flex justify-content-center">
     <form id="update-travel">
       <input name="travel[date]" type="text" placeholder="Updated Date">
       <input name="travel[location]" type="text" placeholder="Updated Location">
       <button class="btn btn-outline-primary" type="submit">Submit Update</button>
     </form>
   </div>
-  <p id="update-message"></p>
+  <p id="update-message" class="d-flex justify-content-center"></p>
 </div>
     </body>
 </html>

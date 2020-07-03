@@ -17,7 +17,9 @@ const indexSuccess = (data) => {
   const showTravelHtml = showTravel({travel: data.travel})
   // const showId = showTravel({travel: data.travel._id})
   $('.content').html(showTravelHtml)
-  $('#view-travels-message').text('Here are your travels!')
+  $('#view-travels-message').text('Here are your travels! (If none shown, get started by filling out Create Travel form)')
+  $('#update-message').empty()
+  $('#create-message').empty()
 }
 
 const deleteSuccess = (travelId) => {
@@ -40,6 +42,7 @@ const updateFailure = () => {
   $('form').trigger('reset')
   $('#update-message').text('Updated travel failed')
 }
+
 
 module.exports = {
   createTravelSuccess,

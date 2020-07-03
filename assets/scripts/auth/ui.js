@@ -53,7 +53,7 @@ const signOutSuccess = function () {
   $('#sign-up-content').hide()
   $('.message').hide()
   $('#sign-out').hide()
-  $('.change-pw-message').hide()
+  $('.change-pw-message').empty()
   $('#create-travel-form').hide()
   $('#view-travels-btn').hide()
   $('.logged-in-view').hide()
@@ -62,6 +62,7 @@ const signOutSuccess = function () {
   $('#view-travels-message').empty()
   $('#update-message').empty()
   $('.content').empty()
+  $('#update-travel').hide()
   console.log(store)
 }
 
