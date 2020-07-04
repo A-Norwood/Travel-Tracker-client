@@ -1,4 +1,5 @@
 @import '~bootstrap/scss/bootstrap';
+$background: #F7F2D8;
 
 .hidden {
   display: none;
@@ -8,14 +9,29 @@
   right: 0;
   top: 40px;
   position: absolute;
+  margin-top: 5px;
 }
 
 h1 {
   left: 5px;
   top: 10px;
+  font-size: 75px;
 }
 
 #sign-up-content {
   left: 5px;
   top: 25px;
+}
+
+#create-travel-form {
+  margin-top: 35px;
+}
+
+body {
+  background-color: $background;
+}
+
+#view-travels-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
