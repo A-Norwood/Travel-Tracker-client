@@ -28,10 +28,25 @@ h1 {
 }
 
 body {
-  background-color: $background;
+  background-image: url('https://azarts.gov/wp-content/uploads/2015/10/McGuire_lg.jpg');
+  background-size: cover;
 }
 
 #view-travels-btn {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.content {
+  font-size: 20px;
+  color: #F9BC0D;
+  font-weight: bolder;
+}
+
+#update-message, #create-message, #view-travels-message {
+  font-size: 20px;
+}
+
+#sign-up-content, #change-pw-message, #signout-message {
+  font-size: 20px;
 }
