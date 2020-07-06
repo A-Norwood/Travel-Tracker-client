@@ -3,11 +3,11 @@ cd[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5b
 # Travel Tracker
 
 Travel Tracker is an app that tracks a user's previous travels.
-Each user can input a location they have been, a date, and experiences for that location.
+Each user can input locations they have been and the date for that location.
 A user can add, update, and delete any trips, and has access to all trip information for their login.
 
 ## Link to Deployed App
-Will be posted once deployed.
+[Link to deployed site](https://a-norwood.github.io/Travel-Tracker-client/)
 
 ## Link to back end repo
 [Back End Repository](https://github.com/A-Norwood/Travel-Tracker-server)
@@ -15,7 +15,7 @@ Will be posted once deployed.
 
 ## Wireframes
 
-[Wireframes](https://imgur.com/a/KdBZuyJ)
+[Wireframes](https://imgur.com/a/PvJyn5b)
 
 ## User Stories
 1. I am a user and I want to sign up, sign in, change password, sign out.
@@ -26,11 +26,13 @@ Will be posted once deployed.
 6. I am a user and I want to delete an item from my travel list.
 
 ## Technoligies Used
-HTML, CSS, Handlebars, JavaScript.
+HTML, CSS, Handlebars, JavaScript, Bootstrap.
 
 
 ## Planning
-Will be determined.
+I followed General Assembly's suggested schedule. I started by building back end (please refer to back-end repo linked above for more detailed information). For this front end I began by creating all of the authorization for sign up, sign in, change password and sign out. As they were created I ensured each action had a response message for the user to see. I then added forms for a user to create their travel. I then made sure a user could view they're inputting travel, and only for their login. I made sure a user could then update the date or location of a current travel, and finally made sure a user can delete their travel. Each action has a success or failure message.
 
 ## Unsolved Problems
-Will be determined.
+I would like to find a better color scheme for the whole web page itself, and style it better.
+For future versions I would like to have a title for each travel and also experiences for those travels.
+I have a lot of stretch goals for this project for future versions.

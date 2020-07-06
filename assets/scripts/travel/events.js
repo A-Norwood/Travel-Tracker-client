@@ -22,7 +22,7 @@ const onTravelIndex = function (event) {
 
 const onDeleteTravel = function (event) {
   event.preventDefault()
-  console.log(event.target)
+  // console.log(event.target)
   const travelId = $(event.target).data('id')
   api.deleteTravel(travelId)
     .then(() => ui.deleteSuccess(travelId))
@@ -40,7 +40,7 @@ const onUpdateTravel = function (event) {
 }
 
 const onTravelClick = function (event) {
-  console.log(event.target)
+  // console.log(event.target)
   event.preventDefault()
   store.travelId = event.target.dataset.id
   $('#update-travel').show()
