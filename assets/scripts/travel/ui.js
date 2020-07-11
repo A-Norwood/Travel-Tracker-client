@@ -43,7 +43,6 @@ const updateFailure = () => {
   $('#update-message').text('Updated travel failed')
 }
 
-
 module.exports = {
   createTravelSuccess,
   createTravelFailure,
