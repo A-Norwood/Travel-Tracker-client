@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Travel Tracker</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <h1>Travel Tracker</h1>
+
+      <section>
+        <!-- sign up section -->
+        <div class="show">
+          <h4 class="d-flex justify-content-center">Sign Up:</h4>
+        <form id="sign-up" class="d-flex justify-content-center">
+          <input placeholder="Enter Email" name="credentials[email]" type="email" required>
+          <input placeholder="Enter Password" name="credentials[password]" type="password" required>
+          <input placeholder="Confirm Password" name="credentials[password_confirmation]" type="password" required>
+          <button class="btn btn-dark" type="submit">Sign Up</button>
+        </form>
+       </div>
+      </section>
+      <!-- <div class="d-flex justify-content-center"> -->
+      <p id="sign-up-content"></p>
+    <!-- </div> -->
+
+      <section>
+        <!-- // sign in section -->
+        <div class="show">
+        <h4 class="d-flex justify-content-center">Sign In:</h4>
+        <form id="sign-in" class="d-flex justify-content-center">
+          <input placeholder="Enter Email" name="credentials[email]" type="email" required>
+          <input placeholder="Password Here" name="credentials[password]" type="password" required>
+          <button class="btn btn-dark" type="submit">Sign In</button>
+        </form>
+      </div>
+      </section>
+
+<!-- // change password section -->
+      <p class="change-pw-message"></p>
+      <section>
+        <div class="hidden">
+        <form id="change-pw">
+          <input placeholder="Old Password" type="password"
+          name="passwords[old]" required>
+          <input placeholder="New password" type="password"
+          name="passwords[new]" required>
+          <button class="btn btn-outline-warning" type="submit">Change Password</button>
+      </form>
+    </div>
+    </section>
+
+<!-- // sign out section -->
+    <section>
+    <div id = "sign-out-stuff" class= "hidden">
+      <form class="text-right fixed-top" id="sign-out">
+      <button class="btn btn-outline-danger" type="submit">Sign Out</button>
+      </form>
+    </div>
+    </section>
+    <div class="d-flex justify-content-center">
+    <p id="signout-message"></p>
+  </div>
+    <div class="logged-in-view">
+    <!-- create travel section -->
+    <section id= "create-travel">
+      <div class="hidden">
+          <form id="create-travel-form" class="d-flex justify-content-center">
+            <h3>Create a travel: </h3>
+            <input name="travel[date]" type="text" required placeholder="Travel Date">
+            <input name="travel[location]" type="text" required placeholder="Travel Location">
+            <button class="btn btn-secondary" type="submit">Submit Travel</button>
+          </form>
+          <p id="create-message" class="d-flex justify-content-center"><p>
+            <!-- View Travel Section -->
+            <div class="d-flex justify-content-center">
+          <button class="btn btn-secondary" id="view-travels-btn">View Your Travels</button>
+        </div>
+      </div>
+    </section>
+    </div>
+  <p id="view-travels-message" class="d-flex justify-content-center"></p>
+  <p id="delete-message" class="d-flex justify-content-center"></p>
+  <p class="content"></p>
+  <!-- Refer to handlebars for delelete section -->
+  <!-- Update section -->
+  <div id="update-travel-info" class="hidden">
+    <div class="d-flex justify-content-center">
+    <form id="update-travel">
+      <input name="travel[date]" type="text" placeholder="Updated Date">
+      <input name="travel[location]" type="text" placeholder="Updated Location">
+      <button class="btn btn-info" type="submit">Submit Update</button>
+    </form>
+  </div>
+  <p id="update-message" class="d-flex justify-content-center"></p>
+</div>
+    </body>
+</html>
