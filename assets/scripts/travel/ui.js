@@ -2,20 +2,17 @@ const store = require('./../store')
 const showTravel = require('./../templates/travel.handlebars')
 
 const createTravelSuccess = function (response) {
-  // console.log('success')
   $('form').trigger('reset')
   $('#create-message').text('Travel entry submitted!')
   store.travel = response.travel
 }
 
 const createTravelFailure = function (data) {
-  // console.log('fail')
   $('#create-message').text('Failiure creating travel! Try Again')
 }
 
 const indexSuccess = (data) => {
   const showTravelHtml = showTravel({travel: data.travel})
-  // const showId = showTravel({travel: data.travel._id})
   $('.content').html(showTravelHtml)
   $('#view-travels-message').text('Here are your travels! (If none shown, get started by filling out Create Travel form)')
   $('#update-message').empty()

@@ -1,7 +1,6 @@
 const store = require('./../store')
 
 const signUpSuccess = function (response) {
-  // console.log(response)
   $('form').trigger('reset')
   $('#sign-up-content').text('Sign up complete ' + response.user.email)
   $('#sign-up-content').show()
@@ -63,7 +62,6 @@ const signOutSuccess = function () {
   $('#update-message').empty()
   $('.content').empty()
   $('#update-travel').hide()
-  // console.log(store)
 }
 
 const signOutFailure = function () {

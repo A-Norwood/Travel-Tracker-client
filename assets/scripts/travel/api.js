@@ -2,8 +2,6 @@ const config = require('./../config.js')
 const store = require('./../store.js')
 
 const createTravel = function (data) {
-  // console.log(store.user._id)
-  // console.log(store.user.token)
   return $.ajax({
     url: config.apiUrl + '/travel',
     method: 'POST',
@@ -20,7 +18,6 @@ const createTravel = function (data) {
 }
 
 const travelIndex = () => {
-  // console.log('this is owner from api ', store.user._id)
   return $.ajax({
     method: 'GET',
     url: config.apiUrl + '/travel',
